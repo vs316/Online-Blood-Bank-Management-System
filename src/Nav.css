@@ -1,0 +1,106 @@
+.nav {
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+  height: 30px;
+  z-index: 999;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav__red {
+  background-color: solid darkred;
+}
+.nav__red:hover {
+  box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.5);
+}
+
+.nav__logo {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 60px;
+  object-fit: contain;
+  padding-left: 20px;
+  cursor: pointer;
+  animation: floatImage 3s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+  100% {
+    transform: translateY(-0.5rem);
+  }
+}
+
+.nav__title {
+  position: fixed;
+  top: 10px;
+  left: 60px;
+  width: 218px;
+  object-fit: contain;
+  padding-left: 0.25px;
+  cursor: pointer;
+  font-size: 2rem;
+  /*background-color: beige;
+*/
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    white,
+    lightgrey,
+    red,
+    rgb(255, 118, 118),
+    white
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0 center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+
+.nav a {
+  font-size: 1rem;
+  color: white;
+  margin-left: 2.5rem;
+  padding-right: -0rem;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  text-shadow: 0 0 2.5px white, 0 0 2.5px white, 0 0 5px red;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: gold;
+}
+
+.nav__contents {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.4rem 9%;
+  display: flex;
+  background-color: darkred;
+  justify-content: right;
+  align-items: right;
+  z-index: 100;
+}
