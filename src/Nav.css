@@ -10,7 +10,7 @@
 }
 
 .nav__red {
-  background-color: solid darkred;
+  background-color: darkred;
 }
 .nav__red:hover {
   box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.5);
@@ -84,12 +84,12 @@
 }
 
 .nav a:hover {
-  text-shadow: 0 0 2.5px white, 0 0 2.5px white, 0 0 5px red;
+  text-shadow: 0 0 2.5px pink, 0 0 2.5px violet, 0 0 5px red;
 }
 
 .nav a:hover,
 .nav a.active {
-  color: gold;
+  color: white;
 }
 
 .nav__contents {
@@ -100,7 +100,98 @@
   padding: 1.4rem 9%;
   display: flex;
   background-color: darkred;
-  justify-content: right;
-  align-items: right;
+  justify-content: flex-end;
+  align-items: flex-end;
   z-index: 100;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding-right: -0rem;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin-left: 2.5rem; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.nav .icon:hover {
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown {
+    position: static;
+    display: block;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: static;
+    width: 100%;
+  }
+
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+
+  .dropbtn {
+    display: block;
+    width: 100%;
+  }
+
+  .nav__logo {
+    margin-right: 0;
+  }
+
+  .nav__title {
+    display: none;
+  }
 }
