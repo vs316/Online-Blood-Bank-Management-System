@@ -37,7 +37,7 @@ function Nav() {
   return (
     <div className={`nav ${show && "nav__red"}`}>
       <div className="nav__contents">
-        <Link to="/home">
+        <Link to="/">
           <img
             className="nav__logo"
             src="https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/R.png?alt=media&token=6bc56cf2-c14a-4cab-aaa5-66adee3fecc8"
@@ -45,7 +45,7 @@ function Nav() {
           />
           <span className="nav__title">BloodSupport</span>
         </Link>
-        <Link to="/home" className="active">
+        <Link to="/" className="active">
           HOME
         </Link>
         <div className="dropdown">

@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import HomeScreen from "./HomeScreen";
-import LoginScreen from "./LoginScreen";
+import SignupScreen from "./SignupScreen";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<HomeScreen />} />
-        <Route path="/login" element={<LoginScreen />} />
+        <Route path="/login" element={<SignupScreen />} />
       </Routes>
     </Router>
   );
