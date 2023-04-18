@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Nav.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 function Nav() {
+  const navigate = useNavigate();
   const [show, handleShow] = useState(false);
   const transitionNavBar = () => {
     if (window.scrollY > 100) {
@@ -36,15 +37,17 @@ function Nav() {
   return (
     <div className={`nav ${show && "nav__red"}`}>
       <div className="nav__contents">
-        <img
-          className="nav__logo"
-          src="https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/R.png?alt=media&token=6bc56cf2-c14a-4cab-aaa5-66adee3fecc8"
-          alt="BloodSupport Logo"
-        />
-        <span className="nav__title">BloodSupport</span>
-        <a href="#HOME" className="active">
+        <Link to="/home">
+          <img
+            className="nav__logo"
+            src="https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/R.png?alt=media&token=6bc56cf2-c14a-4cab-aaa5-66adee3fecc8"
+            alt="BloodSupport Logo"
+          />
+          <span className="nav__title">BloodSupport</span>
+        </Link>
+        <Link to="/home" className="active">
           HOME
-        </a>
+        </Link>
         <div className="dropdown">
           <button className="dropbtn">
             SEARCH
@@ -55,9 +58,9 @@ function Nav() {
             />
           </button>
           <div className="dropdown-content">
-            <a href="#hospitals">Hospitals</a>
-            <a href="#blood-banks">Blood Banks</a>
-            <a href="#blood-inventory">Blood Inventory</a>
+            <Link to="/hospitals">Hospitals</Link>
+            <Link to="/blood-banks">Blood Banks</Link>
+            <Link to="/blood-inventory">Blood Inventory</Link>
           </div>
         </div>
         <div className="dropdown">
@@ -70,12 +73,12 @@ function Nav() {
             />
           </button>
           <div className="dropdown-content">
-            <a href="#want-to-donate">Want to Donate</a>
-            <a href="#need-blood">Need Blood</a>
+            <Link to="/want-to-donate">Want to Donate</Link>
+            <Link to="/need-blood">Need Blood</Link>
           </div>
         </div>
-        <a href="#LOGIN">LOGIN</a>
-        <a href="#CONTACT">CONTACT</a>
+        <Link to="/login">LOGIN</Link>
+        <Link to="/contact">CONTACT</Link>
       </div>
     </div>
   );
