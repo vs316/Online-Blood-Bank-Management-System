@@ -1,33 +1,35 @@
 .banner {
   display: flex;
-  flex-direction: row;
-  margin-top: 100px;
+  flex-wrap: wrap;
+  justify-content: center; /* add this property to center the banner horizontally */
+  margin-top: 400px;
   padding: 20px;
   background-color: lightgray;
 }
 
 .left-container {
-  width: 50%;
+  flex: 1;
   height: 400px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 5px;
-  margin-left: 10px;
-  margin-right: 1px;
+  align-items: flex-start;
+  padding-top: 10px;
+  margin: 10px;
   border-radius: 10px;
   border: 2px solid darkred;
   background-color: white;
 }
 
-.table-header {
+.left-container > h2 {
   background-color: darkred;
   color: white;
   padding: 5px;
-  position: absolute;
-  top: 130px;
+  width: 100%;
+  position: relative;
   border-radius: 10px;
   border: 2px transparent darkorange;
+  margin: 0;
 }
 
 th {
@@ -45,19 +47,21 @@ td.blood__type {
 
 .left-container table {
   border-spacing: 15px;
-  padding-top: 50px;
+  max-height: calc(100% - 50px);
+  overflow-y: auto;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .right-container {
   background-color: white;
-  width: 50%;
+  flex: 0 0 50%;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
-  margin-left: 1px;
-  margin-right: 10px;
+  margin: 10px;
   border-radius: 10px;
   border: 2px solid darkred;
 }
@@ -67,4 +71,21 @@ td.blood__type {
   max-height: 100%;
   border-radius: 10px;
   object-fit: contain;
+}
+
+/* Add media query for screens with max width 768px */
+@media only screen and (max-width: 768px) {
+  .banner {
+    margin-top: 200px; /* decrease the margin top for smaller screens */
+  }
+
+  .left-container {
+    width: 100%; /* set full width for left container */
+    margin: 10px 0; /* remove horizontal margin */
+  }
+
+  .right-container {
+    width: 100%; /* set full width for right container */
+    margin: 10px 0; /* remove horizontal margin */
+  }
 }

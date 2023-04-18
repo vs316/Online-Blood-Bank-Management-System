@@ -21,7 +21,7 @@ function Banner() {
     const intervalId = setInterval(() => {
       const randomIndex = getRandomImageIndex();
       setNextImageIndex(randomIndex);
-    }, 10000);
+    }, 5000);
     return () => clearInterval(intervalId);
   }, [getRandomImageIndex]);
 
@@ -37,9 +37,7 @@ function Banner() {
     <div className="banner">
       <div className="left-container">
         {/* Add your features container here */}
-        <div className="table-header">
-          <h2>Compatible Blood Type Donors</h2>
-        </div>
+        <h2>Compatible Blood Type Donors</h2>
         <table>
           <thead>
             <tr>
