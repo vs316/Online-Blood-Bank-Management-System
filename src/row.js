@@ -16,7 +16,7 @@ function Row() {
         <i></i>
       </button>
       <button style={{ "--clr": "#7FFF00" }} className="row__button">
-        <span>Button 3</span>
+        <span>Parakh</span>
         <i></i>
       </button>
       <button
