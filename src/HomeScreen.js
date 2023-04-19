@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Banner from "./Banner";
 import "./HomeScreen.css";
 import Nav from "./Nav";
+import Row from "./Row";
 import Footer from "./Footer";
 
 function HomeScreen() {
@@ -22,18 +23,10 @@ function HomeScreen() {
 
   return (
     <div className="homeScreen">
-      <link
-        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-        rel="stylesheet"
-      />
-      <img
-        className="home-img"
-        src="https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/counter-bg.png?alt=media&token=92cdf5be-1064-4736-98fb-ce69ecc18227"
-        alt=""
-      />
+      <img src="https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/counter-bg.png?alt=media&token=92cdf5be-1064-4736-98fb-ce69ecc18227" />
       <Nav />
-
       <Banner />
+      <Row />
       <Footer />
     </div>
   );
