@@ -8,22 +8,22 @@ function Row() {
         style={{ "--clr": "rgba(0, 255, 223, 1)" }}
         className="row__button"
       >
-        <span>Button 1</span>
+        <span>Blood Availability Search</span>
         <i></i>
       </button>
       <button style={{ "--clr": "#FFF01F" }} className="row__button">
-        <span>Button 2</span>
+        <span>Blood Bank Directory</span>
         <i></i>
       </button>
       <button style={{ "--clr": "#7FFF00" }} className="row__button">
-        <span>Button 3</span>
+        <span>Donor Login</span>
         <i></i>
       </button>
       <button
         style={{ "--clr": "rgba(0, 255, 223, 1)" }}
         className="row__button"
       >
-        <span>Button 4</span>
+        <span>Blood Donation Camps</span>
         <i></i>
       </button>
     </body>
