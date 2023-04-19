@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  color: #fff;
+  background: darkred;
+}
+
+.footer-text p {
+  font-size: 1.2rem;
+}
+
+.footer-text p:hover {
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 10px #fff;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: lightgrey;
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem lightgray;
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: darkred;
+}

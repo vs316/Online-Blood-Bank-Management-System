@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { auth } from "./firebase";
 import "./SignupScreen.css";
 import Nav from "./Nav";
+import Footer from "./Footer";
+
 function LoginScreen() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
@@ -52,6 +54,7 @@ function LoginScreen() {
           </span>
         </h4>
       </form>
+      <Footer />
     </div>
   );
 }
