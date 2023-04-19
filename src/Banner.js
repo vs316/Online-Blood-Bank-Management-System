@@ -34,72 +34,78 @@ function Banner() {
   }, [getRandomImageIndex]);
 
   return (
-    <div className="banner">
-      <div className="left-container">
-        {/* Add your features container here */}
-        <h2>Compatible Blood Type Donors</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Blood Type</th>
-              <th>Donate Blood To</th>
-              <th>Receive Blood From</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="blood__type">A+</td>
-              <td>A+, AB+</td>
-              <td>A+, A-, O+, O-</td>
-            </tr>
-            <tr>
-              <td className="blood__type">O+</td>
-              <td>O+, A+, B+, AB+</td>
-              <td>O+, O-</td>
-            </tr>
-            <tr>
-              <td className="blood__type">B+</td>
-              <td>B+, AB+</td>
-              <td>B+, B-, O+, O-</td>
-            </tr>
-            <tr>
-              <td className="blood__type">AB+</td>
-              <td>AB+</td>
-              <td>EVERYONE</td>
-            </tr>
-            <tr>
-              <td className="blood__type">A-</td>
-              <td>A+, A-, AB+, AB-</td>
-              <td>A-, O-</td>
-            </tr>
-            <tr>
-              <td className="blood__type">O-</td>
-              <td>EVERYONE</td>
-              <td>O-</td>
-            </tr>
-            <tr>
-              <td className="blood__type">B-</td>
-              <td>B+, B-, AB+, AB-</td>
-              <td>B-, O-</td>
-            </tr>
-            <tr>
-              <td className="blood__type">AB-</td>
-              <td>AB+, AB-</td>
-              <td>AB-, A-, B-, O-</td>
-            </tr>
-          </tbody>
-        </table>
+    <>
+      <img
+        className="banner-img"
+        src="https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/blood-bank%20banner.jpg?alt=media&token=39778b66-7008-4577-a649-ee1e424ae331"
+        alt="banner"
+      />
+      <div className="banner">
+        <div className="left-container">
+          <h2>Compatible Blood Type Donors</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Blood Type</th>
+                <th>Donate Blood To</th>
+                <th>Receive Blood From</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="blood__type">A+</td>
+                <td>A+, AB+</td>
+                <td>A+, A-, O+, O-</td>
+              </tr>
+              <tr>
+                <td className="blood__type">O+</td>
+                <td>O+, A+, B+, AB+</td>
+                <td>O+, O-</td>
+              </tr>
+              <tr>
+                <td className="blood__type">B+</td>
+                <td>B+, AB+</td>
+                <td>B+, B-, O+, O-</td>
+              </tr>
+              <tr>
+                <td className="blood__type">AB+</td>
+                <td>AB+</td>
+                <td>EVERYONE</td>
+              </tr>
+              <tr>
+                <td className="blood__type">A-</td>
+                <td>A+, A-, AB+, AB-</td>
+                <td>A-, O-</td>
+              </tr>
+              <tr>
+                <td className="blood__type">O-</td>
+                <td>EVERYONE</td>
+                <td>O-</td>
+              </tr>
+              <tr>
+                <td className="blood__type">B-</td>
+                <td>B+, B-, AB+, AB-</td>
+                <td>B-, O-</td>
+              </tr>
+              <tr>
+                <td className="blood__type">AB-</td>
+                <td>AB+, AB-</td>
+                <td>AB-, A-, B-, O-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="right-container">
+          <img
+            src={imageUrls[currentImageIndex]}
+            alt=""
+            className={`banner-img ${
+              nextImageIndex !== currentImageIndex ? "transition" : ""
+            }`}
+          />
+        </div>
       </div>
-      <div className="right-container">
-        <img
-          src={imageUrls[currentImageIndex]}
-          alt=""
-          className={`banner-img ${
-            nextImageIndex !== currentImageIndex ? "transition" : ""
-          }`}
-        />
-      </div>
-    </div>
+    </>
   );
 }
 
