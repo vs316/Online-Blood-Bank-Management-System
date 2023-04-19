@@ -19,13 +19,6 @@ function Row() {
         <span>Donor Login</span>
         <i></i>
       </button>
-      <button
-        style={{ "--clr": "rgba(0, 255, 223, 1)" }}
-        className="row__button"
-      >
-        <span>Blood Donation Camps</span>
-        <i></i>
-      </button>
     </body>
   );
 }
