@@ -62,6 +62,10 @@
   margin-top: 20px;
 }
 
+.signupScreen > form > button:hover {
+  box-shadow: 2px 2px 2px 1px maroon;
+}
+
 .signupScreen__link:hover {
   cursor: pointer;
   text-shadow: 0 0 0.4rem rgb(244, 78, 78);

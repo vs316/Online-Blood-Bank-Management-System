@@ -2,8 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* add this property to center the banner horizontally */
-  margin-top: 400px;
+  margin-top: 25vh;
   padding: 20px;
+  margin-bottom: 10vh;
   background-color: lightgray;
 }
 

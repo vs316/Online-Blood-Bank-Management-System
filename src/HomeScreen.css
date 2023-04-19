@@ -5,6 +5,7 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  z-index: 0;
 }
 
 .home-img {
