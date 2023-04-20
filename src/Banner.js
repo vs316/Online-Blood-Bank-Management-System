@@ -6,6 +6,8 @@ function Banner() {
   const [nextImageIndex, setNextImageIndex] = useState(0);
   const imageUrls = useMemo(
     () => [
+      "https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/download%20(1).jpeg?alt=media&token=529dff4e-07a2-4ce0-8a58-62d3545ac3f7",
+      "https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/misc-blood-donation-wallpaper-27db8e27d5cbab14e19185f0047b8f61.jpg?alt=media&token=5fcf8d66-28e3-4d74-b16a-a7c2646b131f",
       "https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/banner%201.jpeg?alt=media&token=891d636c-5cd3-465c-a29a-b6db98289ab2",
       "https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/banner2.jpg?alt=media&token=ac01e1a2-0008-4642-93c5-4d3d3a9331a9",
       "https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/Blood-Banks-by-state-March-2018.png?alt=media&token=3eb7eb4b-ed1d-4b79-9e7b-24c681c05557",

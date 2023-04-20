@@ -42,6 +42,10 @@
   margin: 0;
 }
 
+.left-container > h2:hover {
+  text-shadow: 1px 1px 2.5px whitesmoke;
+}
+
 th {
   font-size: 20px;
   font-weight: bold;
