@@ -5,7 +5,6 @@
   margin-top: 25vh;
   padding: 20px;
   margin-bottom: 10vh;
-  background-color: lightgray;
 }
 
 .banner-img {
@@ -28,7 +27,7 @@
   margin: 10px;
   border-radius: 10px;
   border: 2px solid darkred;
-  background-color: white;
+  background-color: lightgray;
 }
 
 .left-container > h2 {
@@ -65,10 +64,11 @@ td.blood__type {
   overflow-y: auto;
   width: 100%;
   overflow-x: auto;
+  text-align: center;
 }
 
 .right-container {
-  background-color: white;
+  background-color: lightgray;
   flex: 0 0 50%;
   height: 400px;
   display: flex;
