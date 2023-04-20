@@ -65,6 +65,7 @@ td.blood__type {
   overflow-y: auto;
   width: 100%;
   overflow-x: auto;
+  text-align: center;
 }
 
 .right-container {
