@@ -32,7 +32,6 @@ function Banner() {
     }, 5000);
     return () => clearInterval(intervalId);
   }, [getRandomImageIndex]);
-
   return (
     <>
       <img
