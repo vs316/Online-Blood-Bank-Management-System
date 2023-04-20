@@ -27,10 +27,10 @@
 
 .row__button {
   position: relative;
-  width: 500px;
-  height: 150px;
+  width: 375px;
+  height: 125px;
   display: inline-block;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
   color: white;
