@@ -38,5 +38,15 @@
 }
 .contact form .btn {
   margin-top: 2rem;
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #ffff;
+  background-color: #e50914;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
+  font-weight: 600;
+}
+.contact form .btn:hover {
+  box-shadow: 2px 2px 2px 1px maroon;
 }

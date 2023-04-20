@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Row.css";
 
 function Row() {
@@ -16,19 +17,25 @@ function Row() {
   return (
     <div className="body__row">
       <button className="row__button">
-        <span className="row__button__span">Blood Availability Search</span>
-        <i></i>
-        <i></i>
+        <Link to="/blood-inventory">
+          <span className="row__button__span">Blood Availability Search</span>
+          <i></i>
+          <i></i>
+        </Link>
       </button>
       <button className="row__button">
-        <span className="row__button__span">Blood Bank Directory</span>
-        <i></i>
-        <i></i>
+        <Link to="/blood-bank">
+          <span className="row__button__span">Blood Bank Directory</span>
+          <i></i>
+          <i></i>
+        </Link>
       </button>
       <button className="row__button">
-        <span className="row__button__span">Donor Login</span>
-        <i></i>
-        <i></i>
+        <Link to="/login">
+          <span className="row__button__span">Donor Login</span>
+          <i></i>
+          <i></i>
+        </Link>
       </button>
     </div>
   );
