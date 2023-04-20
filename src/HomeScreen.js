@@ -25,7 +25,8 @@ function HomeScreen() {
     <div className="homeScreen">
       <img
         className="home-img"
-        src="https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/counter-bg.png?alt=media&token=92cdf5be-1064-4736-98fb-ce69ecc18227"
+        src="https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/Awesome%20Red%20and%20Black%20iPhone%20Wallpapers%20-%20WallpaperAccess.jpg?alt=media&token=e3caf4bc-2637-42b7-8bb9-191866479fc7
+        "
         alt="background"
       />
       <Nav />

@@ -18,7 +18,7 @@ function Row() {
     <div className="body__row">
       <button className="row__button">
         <Link to="/blood-inventory">
-          <span className="row__button__span">Blood Availability Searching</span>
+          <span className="row__button__span">Blood Availability Search</span>
           <i></i>
           <i></i>
         </Link>
