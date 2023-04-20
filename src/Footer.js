@@ -1,9 +1,15 @@
 import React from "react";
 import "./Footer.css";
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <footer class="footer">
-      <div class="footer-text">
+    <footer className="footer">
+      <div className="footer-text">
         <link
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
           rel="stylesheet"
@@ -14,9 +20,9 @@ function Footer() {
         </p>
       </div>
 
-      <div class="footer-iconTop">
-        <a href="#home" id="scroll-top">
-          <i class="bx bx-up-arrow-alt"></i>
+      <div className="footer-iconTop">
+        <a href="#home" id="scroll-top" onClick={scrollToTop}>
+          <i className="bx bx-up-arrow-alt"></i>
         </a>
       </div>
     </footer>
