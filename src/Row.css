@@ -27,14 +27,13 @@
 
 .row__button {
   position: relative;
-  width: 250px;
-  height: 60px;
+  width: 500px;
+  height: 150px;
   display: inline-block;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   color: white;
-  letter-spacing: 2px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -77,7 +76,8 @@
   align-items: center;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+  font-size: 1.15rem;
   border: 1px solid red;
   border-radius: 3px;
   background: rgba(139, 0, 0, 0.65);
