@@ -2,12 +2,13 @@ import React, { useRef } from "react";
 import { auth } from "./firebase";
 import "./SignupScreen.css";
 import Nav from "./Nav";
+import { Link } from "react-router-dom";
 
 function LoginScreen() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
 
-  const register = (e) => {
+  /* const register = (e) => {
     e.preventDefault();
 
     auth
@@ -21,7 +22,7 @@ function LoginScreen() {
       .catch((error) => {
         alert(error.message);
       });
-  };
+  }; */
   const signIn = (e) => {
     e.preventDefault();
 
@@ -48,9 +49,11 @@ function LoginScreen() {
         </button>
         <h4>
           <span className="signupScreen__gray">New Here? </span>
-          <span className="signupScreen__link" onClick={register}>
-            Sign up now by answering a few questions.
-          </span>
+          <Link to="./newsignup">
+            <span className="signupScreen__link">
+              Sign up now by answering a few questions.
+            </span>
+          </Link>
         </h4>
       </form>
     </div>

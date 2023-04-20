@@ -9,6 +9,7 @@ import BloodInventory from "./BloodInventoryScreen";
 import HospitalScreen from "./HospitalScreen";
 import WanttoDonateScreen from "./WanttoDonateScreen";
 import NeedBloodScreen from "./NeedBloodScreen";
+import NewSignUpScreen from "./NewSignUpScreen";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/hospitals" element={<HospitalScreen />} />
         <Route path="/want-to-donate" element={<WanttoDonateScreen />} />
         <Route path="/need-blood" element={<NeedBloodScreen />} />
+        <Route path="./newsignup" element={<NewSignUpScreen />} />
       </Routes>
     </Router>
   );
