@@ -1,0 +1,82 @@
+.signupScreen__popup {
+  background-color: rgba(211, 211, 211, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 0.8rem lightgray;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  overflow: auto;
+}
+
+.signupScreen__popup h2 {
+  margin-top: 0;
+  color: black;
+}
+
+.signupScreen__popup label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  color: black;
+}
+.signupScreen__popup label input[type="text"] {
+  text-align: center;
+}
+
+.signupScreen__popup label input[type="number"] {
+  text-align: left;
+}
+
+.signupScreen__popup label input[type="radio"] {
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.signupScreen__popup p {
+  margin-right: 10px;
+}
+
+.signupScreen__popup p,
+.signupScreen__popup label {
+  margin-bottom: 10px;
+}
+
+.signupScreen__popup label input,
+.signupScreen__popup label select {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.signupScreen__popup label select {
+  width: 50%;
+}
+
+.signupScreen__popup button[type="submit"],
+.signupScreen__popup button[type="button"] {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signupScreen__popup button[type="submit"]:hover,
+.signupScreen__popup button[type="button"]:hover {
+  background-color: #d40911;
+}
