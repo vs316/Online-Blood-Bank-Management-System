@@ -64,6 +64,7 @@ function SignupScreen() {
         <h4>
           <span className="signupScreen__gray">New Here? </span>
           <button
+            type="button"
             className="signupScreen__link"
             onClick={() => setIsPopupOpen(true)}
           >
