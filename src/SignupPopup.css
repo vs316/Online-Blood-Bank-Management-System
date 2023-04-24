@@ -11,6 +11,10 @@
   transform: translate(-50%, -50%);
   z-index: 100;
   overflow: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .signupScreen__popup h2 {
@@ -40,6 +44,7 @@
   text-align: right;
   margin-top: 5px;
   margin-left: 10px;
+  font-size: 24px;
 }
 
 .signupScreen__popup p {
@@ -48,7 +53,7 @@
 
 .signupScreen__popup p,
 .signupScreen__popup label {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .signupScreen__popup label input,
@@ -66,7 +71,9 @@
 
 .signupScreen__popup button[type="submit"],
 .signupScreen__popup button[type="button"] {
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-left: 1rem;
+  margin-bottom: 10px;
   padding: 5px;
   border-radius: 5px;
   border: none;
@@ -75,8 +82,35 @@
   font-size: 16px;
   cursor: pointer;
 }
+.cancel-btn {
+  margin-top: 10px;
+  margin-left: 5rem;
+}
 
 .signupScreen__popup button[type="submit"]:hover,
 .signupScreen__popup button[type="button"]:hover {
   background-color: #d40911;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: black;
+  font-size: 2rem;
+}
+
+.close-icon:hover {
+  color: #d40911;
+}
+
+.question-container {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  display: inline-block;
 }

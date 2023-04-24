@@ -15,13 +15,11 @@ function SignupScreen() {
 
   const signIn = async (e) => {
     e.preventDefault();
-
     try {
-      const authUser = await auth.signInWithEmailAndPassword(
+      await auth.signInWithEmailAndPassword(
         emailRef.current.value,
         passwordRef.current.value
       );
-      console.log(authUser);
     } catch (error) {
       alert(error.message);
     }
@@ -31,16 +29,8 @@ function SignupScreen() {
     e.preventDefault();
 
     try {
-      // Check eligibility based on the answers
       if (age >= 18 && weight >= 50 && bloodGroup !== "") {
-        // Store user info in Firebase
-        await db.collection("users").add({
-          name: name,
-          age: age,
-          weight: weight,
-          bloodGroup: bloodGroup,
-        });
-
+        await db.collection("users").add({ name, age, weight, bloodGroup });
         setIsPopupOpen(false);
       } else {
         alert("Sorry, you are not eligible to donate blood.");
@@ -50,7 +40,6 @@ function SignupScreen() {
       alert("An error occurred. Please try again.");
     }
   };
-
   return (
     <div className="signupScreen">
       <Nav />
