@@ -1,6 +1,7 @@
 .banner {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center; /* add this property to center the banner horizontally */
   margin-top: 25vh;
   padding: 20px;

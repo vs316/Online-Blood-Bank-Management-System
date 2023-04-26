@@ -1,0 +1,90 @@
+body {
+  background-color: transparent;
+}
+
+.BloodBank__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* add this property to center the banner horizontally */
+  margin-top: 10vh;
+  padding: 20px;
+  margin-bottom: 10vh;
+}
+
+.BloodBankTable__description {
+  color: white;
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+.BloodBankTable__description:hover {
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+}
+
+.BloodBank__table {
+  margin-top: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid red;
+  background-color: lightgray;
+}
+
+.BloodBank__table:hover {
+  box-shadow: 0 0 10px 5px red;
+}
+
+.thead {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+}
+
+.thead:hover {
+  text-shadow: 0px 0px 15px rgba(54, 54, 54, 0.8);
+}
+
+.BloodBank__tablebody {
+  font-size: 2rem;
+  margin-top: 5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgray;
+  margin-bottom: 2rem;
+}
+
+.BloodBank__Sno {
+  text-align: center;
+}
+
+.BloodBank__Name {
+  color: darkred;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.BloodBank__Name:hover {
+  text-shadow: 0px 0px 5px rgba(255, 29, 29, 0.8);
+}
+
+.BloodBank__Link {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+}
+.BloodBank__Link:hover {
+  text-shadow: 3px 3px 10px rgba(68, 255, 0, 1);
+}
+
+.bb__link {
+  text-decoration: none;
+  color: rgb(0, 157, 39);
+}

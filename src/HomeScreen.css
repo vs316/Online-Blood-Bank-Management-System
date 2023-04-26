@@ -1,9 +1,10 @@
 html {
-  background-color: white; /* set a background color as a fallback */
+  background-color: transparent; /* set a background color as a fallback */
   background-image: url("https://firebasestorage.googleapis.com/v0/b/onl-bbms.appspot.com/o/Awesome%20Red%20and%20Black%20iPhone%20Wallpapers%20-%20WallpaperAccess.jpg?alt=media&token=e3caf4bc-2637-42b7-8bb9-191866479fc7");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   z-index: 0;
 }
 

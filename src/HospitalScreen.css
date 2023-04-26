@@ -1,0 +1,87 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* add this property to center the banner horizontally */
+  margin-top: 10vh;
+  padding: 20px;
+  margin-bottom: 10vh;
+}
+
+.Table__description {
+  color: white;
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+.Table__description:hover {
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+}
+
+.Hospital__table {
+  margin-top: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid red;
+  background-color: lightgray;
+}
+
+.Hospital__table:hover {
+  box-shadow: 0 0 10px 5px red;
+}
+
+.thead {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+}
+
+.thead:hover {
+  text-shadow: 0px 0px 15px rgba(54, 54, 54, 0.8);
+}
+
+.Hospital__tablebody {
+  font-size: 2rem;
+  margin-top: 5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgray;
+  margin-bottom: 2rem;
+}
+
+.Hospital__Sno {
+  text-align: center;
+}
+
+.Hospital__Name {
+  color: darkred;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Hospital__Name:hover {
+  text-shadow: 0px 0px 5px rgba(255, 29, 29, 0.8);
+}
+
+.Hospital__Link {
+  color: darkred;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Hospital__Link:hover {
+  text-shadow: 0px 0px 5px rgba(132, 132, 132, 0.8);
+}
+
+.bb__link {
+  text-decoration: none;
+  color: rgb(0, 157, 39);
+}
