@@ -40,7 +40,7 @@ function HospitalScreen() {
     <div>
       <Nav />
       <div className="content">
-        <h2 className="Table__description">HOSPITALS NEAR GUDUVENCHERY</h2>
+        <h2 className="Table__description">HOSPITALS NEAR GUDUVANCHERY</h2>
         <table className="Hospital__table">
           <thead className="table__heading">
             <tr>
@@ -56,7 +56,7 @@ function HospitalScreen() {
               <td className="Hospital__Link">
                 <a
                   className="bb__link"
-                  href="https://www.google.com/maps/dir/13.018976,80.1864929/SRM+General+Hospital,+Mahatma+Gandhi+Rd,+Potheri,+SRM+Nagar,+Village+District,+Kattankulathur,+Tamil+Nadu+603203/@12.9208863,80.0550446,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a52f70b53105bc7:0xc5d8b72fb4218091!2m2!1d80.0479642!2d12.8229418"
+                  href="https://maps.app.goo.gl/kKwPjt35jrmaLXwe7"
                   target="_blank"
                   rel="noreferrer"
                 >

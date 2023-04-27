@@ -7,7 +7,7 @@ function BloodBankScreen() {
       <Nav />
       <div className="BloodBank__content">
         <h2 className="BloodBankTable__description">
-          BlOOD BANKS NEAR GUDAVENCHERY
+          BlOOD BANKS NEAR GUDUVANCHERY
         </h2>
         <table className="BloodBank__table">
           <thead className="BloodBanktable__heading">
